@@ -1,0 +1,178 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+.home {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  color: #fff;
+}
+
+.nav__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.nav__logo {
+  margin-right: auto;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav__list a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.home__content {
+  z-index: 1;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.home__text {
+  margin: 100px 10px;
+  font-size: 30px;
+  line-height: 4em;
+}
+
+.video-bg {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+main {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+  line-height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about {
+  max-width: 70%;
+  text-align: justify;
+}
+
+.about__list {
+  padding-left: 40px;
+  list-style: circle;
+}
+
+table {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+}
+
+th, td {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+}
+
+th, td {
+  padding: 5px;
+  min-width: 100px;
+}
+
+.aside {
+  max-width: 20%;
+  padding-left: 20px;
+  background-color: rgba(160, 155, 155, 0.4);
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.gallery__item {
+  max-width: 30%;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 65%;
+}
+
+.contact {
+  margin: 0 auto;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact form input {
+  height: 50px;
+}
+
+footer {
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=main.css.map */
