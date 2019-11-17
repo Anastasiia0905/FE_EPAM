@@ -1,0 +1,78 @@
+.nav  {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav__main {
+    position: absolute;
+    padding: 90px;
+    flex-direction: column;
+    right: -50%;
+    top: 0;
+    bottom: 0;
+    transition: all 0.6s ease-in-out;
+    background-color: rgba(110, 104, 103, 0.6);
+    li {
+        padding-bottom: 20px;
+        a {
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+    }
+}
+.nav__drop {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    transition: all 0.5s ease;
+}
+ul li:hover > ul {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    li  a {
+        font-size: 0.8em;
+    }
+    li:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.burger {
+    display: none;
+}
+.burger__label {
+    z-index: 1;
+    position: absolute;
+    right: 20px;
+    display: block;
+    width: 40px;
+}
+.burger__label::before {
+    content: url("/img/icon/bars-solid.svg");
+}
+.burger:checked + .nav__main {
+    display: flex;
+    right: 20%;
+    transform: translateX(50%);
+}
+@media (min-width: 1024px){
+    .nav__main {
+       display: flex;
+       position: static;
+       padding-top: 25px;
+       flex-direction: row;
+       justify-content: space-around;
+       width: 70%;
+    }
+    ul li:hover > ul {
+        position: absolute;
+    }
+    .burger__label {
+        display: none;
+        
+    }
+}

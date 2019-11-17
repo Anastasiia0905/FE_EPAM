@@ -1,0 +1,10 @@
+$link-color: #fff;
+$heading-color: #000;
+$text-color: #a9a9a9;
+
+a {
+    color: $link-color;
+}
+p, span {
+    color: $text-color;
+}

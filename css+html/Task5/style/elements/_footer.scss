@@ -1,0 +1,25 @@
+.footer {
+    background-color: #202020;
+    display: flex;
+    flex-wrap: wrap;
+    &__text{
+        text-align: start;
+        width: 330px;
+        h4 {
+            color: #f6b138;
+        }
+    }
+    &__social {
+        padding-top: 20px;
+        width: 330px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .socail-item {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+    

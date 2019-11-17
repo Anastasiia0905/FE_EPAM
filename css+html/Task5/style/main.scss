@@ -1,0 +1,22 @@
+@import 'fonts.scss';
+@import 'grid.scss';
+@import 'typography.scss';
+
+/*-----------Elements--------*/
+@import 'elements/hero';
+@import 'elements/logo';
+@import 'elements/nav';
+@import 'elements/work';
+@import 'elements/service';
+@import 'elements/slider';
+@import 'elements/contact';
+@import 'elements/footer';
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+

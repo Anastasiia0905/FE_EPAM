@@ -1,0 +1,94 @@
+.contact {
+    background-color: #1c1c1c;
+    font-style: italic;
+    font-weight: 100;
+    &__get-in-touch {
+        display: flex;
+        flex-direction: column;
+        span {
+            display: inline-block;
+            position: relative;
+            width: 40%;
+            margin: 20px auto;
+            text-align: start;
+            
+        }
+        span::before {
+            content: "";
+            display: block;
+            position: absolute;
+            padding: 15px;
+            bottom: 50%;
+            left: -40%;
+            transform: translateY(50%);
+            border: 1px solid #f6b138;
+            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+        }
+        span:first-child::before {
+            content: url('/img/icon/mobile-alt-solid.svg');
+        }
+        span:nth-child(2)::before {
+            content: url('/img/icon/map-marker-alt-solid.svg');
+        }
+        span:last-child::before {
+            content: url('/img/icon/envelope-regular.svg');
+        }
+    }
+    &__form {
+        padding-top: 30px;
+        input, textarea {
+            width: 80%;
+            color: #f6b138;
+            margin-top: 30px;
+            line-height: 3em;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #616161;
+            outline: none;
+        }
+        input[type='submit']{
+            border: 2px solid #fff;
+            color: #fff;
+        }
+        input::placeholder,
+        textarea::placeholder {
+            line-height: 1em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (min-width: 721px) {
+    .contact {
+        &__get-in-touch {
+            flex-direction: row;
+            span {
+                width: auto;
+            }
+        }
+        form {
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            input {
+                width: 40%;
+            }
+            textarea {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (min-width: 1024px){
+    .contact {
+        form {
+            input {
+                width: 330px;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.hero {
+    height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    background: url('/img/hero.png') center center;
+    background-size: cover;
+}
+.hero__text {
+   text-align: center;
+   color: #fff;
+   padding-top: 30vh;
+}

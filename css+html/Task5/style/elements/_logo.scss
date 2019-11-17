@@ -1,0 +1,21 @@
+.logo {
+    &__hummer {
+        position: relative;
+    }
+    &__hummer::after,
+    &__hummer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        display: block;
+        height: 1px;
+        width: 80px;
+        background-color: #000;
+    }
+    &__hummer::after {
+        right: 40px;
+    } 
+    &__hummer::before {
+        left: 40px;
+    }
+}
