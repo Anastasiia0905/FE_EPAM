@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('/images/bg.png');
+}
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 700px;
+    height: 540px;
+    background: url('/images/border.png') center center no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__ball {
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        bottom: 5%;
+        img {
+            height: 90%;
+        }
+    }
+    &__half {
+        width: 40%;
+        height: 70%;
+        
+    }
+    .left {
+        background: url('/images/bg_item.png') center center no-repeat;
+        background-size: cover;
+        position: relative;
+        .content {
+            width: 92%;
+            height: 68%;
+            display: grid;
+            position: absolute;
+            bottom: 13%;
+            left: 10px;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(10, 2fr);
+        }
+        span {
+            border: 2px solid #000;
+        }
+        .cube {
+            background: url("/images/cube.png") center center;
+            background-size: cover;
+            grid-row: 1/3;
+            grid-column: 1/3;
+        }
+        .runa {
+            background: url('/images/runa-branch.png') center center;
+            background-size: cover; 
+        }
+        .ring {
+            background: url('/images/gold-ring.png') center center;
+        }
+        .eye {
+            background: url('/images/eye.png') center center;
+        }
+        .orange {
+            background: url('/images/orange-ring.png') center center;
+            background-size: cover;
+        }
+        .gold-book {
+            background: url('/images/gold-book.png') center center;
+            background-size: cover;
+            grid-row: 7/11;
+        }
+        .runa-crystal {
+            background: url('/images/runa-cristall.png') center center;
+            background-size: cover;
+        }
+        .life {
+            background: url('/images/life.png') center center;
+            background-size: cover;
+        }
+        .medal {
+            background: url('/images/medal.png');
+        }
+    }
+    .right {
+        background: url('/images/bg_item-right.png') center center no-repeat;
+        background-size: contain;
+        &-top {
+            height: 45%;
+            .content {
+               display: flex;
+               height: 100%;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .sword {
+                height: 65%;
+            }
+            .helmet, .shoes {
+                height: 35%;
+            }
+            .ring-big {
+                height: 100%;
+            }
+            .crown {
+                height: 20%;
+            }
+            .coulomb, .rimg-small {
+                height: 50%;
+            }
+        }
+    }
+    
+   
+}

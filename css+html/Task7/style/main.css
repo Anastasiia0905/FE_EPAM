@@ -1,0 +1,170 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("/images/bg.png");
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 700px;
+  height: 540px;
+  background: url("/images/border.png") center center no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__ball {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  bottom: 5%;
+}
+
+.container__ball img {
+  height: 90%;
+}
+
+.container__half {
+  width: 40%;
+  height: 70%;
+}
+
+.container .left {
+  background: url("/images/bg_item.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container .left .content {
+  width: 92%;
+  height: 68%;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  bottom: 13%;
+  left: 10px;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (2fr)[10];
+      grid-template-rows: repeat(10, 2fr);
+}
+
+.container .left span {
+  border: 2px solid #000;
+}
+
+.container .left .cube {
+  background: url("/images/cube.png") center center;
+  background-size: cover;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.container .left .runa {
+  background: url("/images/runa-branch.png") center center;
+  background-size: cover;
+}
+
+.container .left .ring {
+  background: url("/images/gold-ring.png") center center;
+}
+
+.container .left .eye {
+  background: url("/images/eye.png") center center;
+}
+
+.container .left .orange {
+  background: url("/images/orange-ring.png") center center;
+  background-size: cover;
+}
+
+.container .left .gold-book {
+  background: url("/images/gold-book.png") center center;
+  background-size: cover;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 4;
+  grid-row: 7/11;
+}
+
+.container .left .runa-crystal {
+  background: url("/images/runa-cristall.png") center center;
+  background-size: cover;
+}
+
+.container .left .life {
+  background: url("/images/life.png") center center;
+  background-size: cover;
+}
+
+.container .left .medal {
+  background: url("/images/medal.png");
+}
+
+.container .right {
+  background: url("/images/bg_item-right.png") center center no-repeat;
+  background-size: contain;
+}
+
+.container .right-top {
+  height: 45%;
+}
+
+.container .right-top .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .right-top .sword {
+  height: 65%;
+}
+
+.container .right-top .helmet, .container .right-top .shoes {
+  height: 35%;
+}
+
+.container .right-top .ring-big {
+  height: 100%;
+}
+
+.container .right-top .crown {
+  height: 20%;
+}
+
+.container .right-top .coulomb, .container .right-top .rimg-small {
+  height: 50%;
+}
+/*# sourceMappingURL=main.css.map */

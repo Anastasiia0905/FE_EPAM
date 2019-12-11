@@ -139,11 +139,11 @@
   left: 5px;
 }
 
-.radio-button input[type='checkbox']:checked + .label {
+.radio-button input[type='checkbox']:checked ~ .label {
   background: lightgray;
 }
 
-.radio-button input[type='checkbox']:checked + .label::after {
+.radio-button input[type='checkbox']:checked ~ .label::after {
   background: green;
 }
 

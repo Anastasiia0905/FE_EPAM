@@ -107,7 +107,7 @@
         top: 5px;
         left: 5px;
     }
-    input[type='checkbox']:checked + .label{
+    input[type='checkbox']:checked ~ .label{
         background: lightgray;
         &::after {
             background: green;
