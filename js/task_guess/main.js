@@ -1,19 +1,46 @@
-const inputValue = document.querySelector('#number');
-const answerValue = document.querySelector('#answer');
-const buttonCheck = document.querySelector(".check");
+let randomNumber = Math.ceil(Math.random()*100);
+let guessField = document.querySelector("#guessField");
+let guessSubmit = document.querySelector(".guessSubmit");
+let guessCount = 0;
 
-let count = 1;
+let count = document.querySelector(".count");
+let hint = document.querySelector(".hint");
+
+let topNumber = 100;
+let bottomNumber = 0;
 
 
-
-
-window.onload = function (){
-    let num = Math.ceil(Math.random()*100);
-     inputValue.value = num;
+function check(){
+    let guessNumber = Number(guessField.value);
+    guessCount ++;
+    if(guessNumber > randomNumber){
+        topNumber = guessNumber -1;
+        bottomNumber = bottomNumber;
+        show();
+    }
+    if(guessNumber < randomNumber){
+        bottomNumber = guessNumber + 1;
+        topNumber = topNumber;
+        show();
+    }
+    if(guessNumber === randomNumber){
+        alert(`Ты угадал!!!`);
+        reset();
+    }
+    
 }
-buttonCheck.addEventListener('click', function(){
-      console.log(answerValue.value);
-      if(inputValue.value > answerValue.value){
-          alert('wow')
-      }
-})
+function show(){
+    count.textContent = `Это твоя попытка № ${guessCount}`;
+    hint.textContent = `Загаданое число от ${bottomNumber} до ${topNumber}`;
+}
+function reset(){
+    randomNumber = Math.ceil(Math.random()*100);
+    count.textContent = `Это твоя попытка №`
+    hint.textContent = `Загаданое число от 0 до 100`;
+    guessCount = 0;
+    guessField.value = '';
+    topNumber = 100;
+    bottomNumber = 0;
+
+}
+guessSubmit.addEventListener("click", check);

@@ -9,14 +9,13 @@
 </head>
 <body>
     <div class="form">
-        <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+        <label for="guessField">Угадай число: </label><input type="text" id="guessField" class="guessField">
         <input type="submit" value="Submit guess" class="guessSubmit">
       </div>
-      <div class="resultParas">
-        <p class="guesses">Previous guesses: 1 </p>
-        <p class="lastResult" style="background-color: red;">Wrong!</p>
-        <p class="lowOrHi">Last guess was too low!</p>
-      </div>
+    <div class="answer">
+      <p class="count">Это твоя попытка № </p>
+      <p class="hint">Загаданое число от 0 до 100</p>
+    </div>
 </body>
 <script src="main.js"></script>
 </html>
